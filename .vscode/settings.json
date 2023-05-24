@@ -19,7 +19,7 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#292425",
-    "editor.fontFamily": "Consolas",
+    "editor.fontFamily": "Fira Code Medium",
     "terminal.integrated.fontSize": 11,
     "editor.codeLensFontFamily": "Consolas"
 }
