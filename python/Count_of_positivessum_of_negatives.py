@@ -1,11 +1,20 @@
 def count_positives_sum_negatives(arr):
     if len(arr) == 0:
         return []
-    pos = sum([1 for i in arr if i > 0]) # counts how many positive numbers in the array
-    neg = sum([i for i in arr if i < 0]) # sums all the negative numbers
-    return  [pos, neg]
+    # * pos = sum([1 for i in arr if i > 0]) # counts how many positive numbers in the array
+    pos = 0
+    for i in arr:
+        if i > 0:
+            pos += 1
+    # * neg = sum([i for i in arr if i < 0]) # sums all the negative numbers
+    neg = 0
+    for j in arr:
+        if j < 0:
+            neg += j
+    return [pos, neg]
 
-print(count_positives_sum_negatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
+print(count_positives_sum_negatives(
+    [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
 
 # * SUCCESSFULLY COMPLETED WITHOUT UNLOCKING SOLUTION
 # * Completed Date: 22.05.2023
