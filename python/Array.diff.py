@@ -12,7 +12,7 @@ def array_diff(a, b):
     #             a.remove(i)
     #     return a
     return [x for x in a if x not in b]
-print(array_diff([1,2,2,2,3],[2]))
+print(array_diff([1,2,2,2,3],[3])) # [1, 2, 2, 2]
 
 # * SUCCESSFULLY COMPLETED WITHOUT UNLOCKING SOLUTION
 # * Completed Date: 26.05.2023
